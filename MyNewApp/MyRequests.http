@@ -1,0 +1,44 @@
+GET http://localhost:5243/todos
+
+###
+POST http://localhost:5243/todos
+Content-Type: application/json
+
+{
+    "id": 1,
+    "name": "Write demo",
+    "dueDate": "2024-12-31",
+    "isCompleted": false
+}
+
+###
+POST http://localhost:5243/todos
+Content-Type: application/json
+
+{
+    "id": 2,
+    "name": "Write another demo",
+    "dueDate": "2024-12-31",
+    "isCompleted": false
+}
+
+###
+POST http://localhost:5243/todos
+Content-Type: application/json
+
+{
+    "id": 3,
+    "name": "Write ana third demo",
+    "dueDate": "2022-12-31",
+    "isCompleted": false
+}
+
+###
+GET http://localhost:5243/todos/1
+
+###
+DELETE http://localhost:5243/todos/1
+
+###
+GET http://localhost:5243/tasks/2
+
